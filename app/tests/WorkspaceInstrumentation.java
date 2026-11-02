@@ -1,0 +1,11 @@
+package cn.sixnine.filmlog;
+import android.app.Instrumentation;
+import android.os.Bundle;
+import android.content.Context;
+import java.io.*;
+import java.util.*;
+public final class WorkspaceInstrumentation extends Instrumentation {
+ void check(boolean b,String message){if(!b)throw new AssertionError(message);}
+ @Override public void onCreate(Bundle b){super.onCreate(b);start();}
+ @Override public void onStart(){waitForIdleSync();Bundle result=new Bundle();try{Context root=getTargetContext();check(root.getPackageName().equals("cn.sixnine.filmlog.media.tests"),"test isolation");String a=UUID.randomUUID().toString(),b=UUID.randomUUID().toString();Context first=new WorkspaceContext(root,a),second=new WorkspaceContext(root,b),guest=new WorkspaceContext(root,"guest");check(guest.getFilesDir().equals(root.getFilesDir())&&guest.getDatabasePath("film-log.db").equals(root.getDatabasePath("film-log.db")),"guest paths remain backward compatible");check(!first.getFilesDir().equals(second.getFilesDir())&&!first.getCacheDir().equals(second.getCacheDir()),"media/cache paths separate");first.getSharedPreferences("private",0).edit().putString("memo","first").commit();check(!second.getSharedPreferences("private",0).contains("memo")&&!root.getSharedPreferences("private",0).contains("memo"),"preferences isolated");String roll;try(LogStore logs=new LogStore(first)){roll=logs.addRoll("workspace one","Test","Camera",100,36);check(logs.rolls().size()==1,"first workspace opened");}try(LogStore logs=new LogStore(second)){check(logs.rolls().isEmpty(),"second workspace has no first data");}Workspace.activate(root,b);check(Workspace.identity(first.getApplicationContext()).equals(a),"old worker keeps frozen workspace");try(LogStore logs=new LogStore(first.getApplicationContext())){check(logs.roll(roll).name.equals("workspace one"),"old worker reopens original database after switch");}Workspace.activate(root,"guest");result.putString("stream","PASS: guest path compatibility, isolated databases/media/cache/preferences, frozen background-worker identity across switches\n");finish(-1,result);}catch(Throwable e){result.putString("stream",android.util.Log.getStackTraceString(e));finish(1,result);}}
+}

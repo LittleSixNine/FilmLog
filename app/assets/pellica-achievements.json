@@ -1,0 +1,244 @@
+{
+  "groups": [
+    {
+      "id": "basic",
+      "title": "入门"
+    },
+    {
+      "id": "intermediate",
+      "title": "稳步前进"
+    },
+    {
+      "id": "advanced",
+      "title": "专家级别"
+    },
+    {
+      "id": "consistency",
+      "title": "持之以恒"
+    },
+    {
+      "id": "technical",
+      "title": "技术精通"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "beginner",
+      "group": "basic",
+      "name": "新手",
+      "condition": "创建 1 卷胶卷",
+      "description": "你的第一卷胶卷已添加。欢迎来到摄影世界！",
+      "icon": 59282,
+      "metric": "rolls",
+      "target": 1,
+      "rarity": "common"
+    },
+    {
+      "id": "apprentice",
+      "group": "basic",
+      "name": "学徒",
+      "condition": "拍摄 10 张",
+      "description": "你开始探索自己的创造力了。",
+      "icon": 57614,
+      "metric": "shots",
+      "target": 10,
+      "rarity": "common"
+    },
+    {
+      "id": "amateur",
+      "group": "basic",
+      "name": "业余爱好者",
+      "condition": "拍摄 50 张",
+      "description": "你对摄影的热情与日俱增。",
+      "icon": 57354,
+      "metric": "shots",
+      "target": 50,
+      "rarity": "common"
+    },
+    {
+      "id": "photography_enthusiast",
+      "group": "intermediate",
+      "name": "摄影爱好者",
+      "condition": "拍摄 100 张",
+      "description": "你收藏的回忆越来越多了！",
+      "icon": 58124,
+      "metric": "shots",
+      "target": 100,
+      "rarity": "rare"
+    },
+    {
+      "id": "collector",
+      "group": "intermediate",
+      "name": "收藏家",
+      "condition": "创建 10 卷胶卷",
+      "description": "你正在建立真正的影像作品集。",
+      "icon": 58470,
+      "metric": "rolls",
+      "target": 10,
+      "rarity": "rare"
+    },
+    {
+      "id": "regular_photographer",
+      "group": "intermediate",
+      "name": "勤拍摄影师",
+      "condition": "创建 30 卷胶卷",
+      "description": "摄影已成为你日常生活的一部分。",
+      "icon": 59154,
+      "metric": "rolls",
+      "target": 30,
+      "rarity": "rare"
+    },
+    {
+      "id": "passionate_photographer",
+      "group": "advanced",
+      "name": "摄影发烧友",
+      "condition": "拍摄 200 张",
+      "description": "你对摄影的投入令人印象深刻。",
+      "icon": 58474,
+      "metric": "shots",
+      "target": 200,
+      "rarity": "epic"
+    },
+    {
+      "id": "film_expert",
+      "group": "advanced",
+      "name": "胶片专家",
+      "condition": "创建 50 卷胶卷",
+      "description": "你已掌握捕捉瞬间的艺术。",
+      "icon": 59006,
+      "metric": "rolls",
+      "target": 50,
+      "rarity": "epic"
+    },
+    {
+      "id": "master_photographer",
+      "group": "advanced",
+      "name": "摄影大师",
+      "condition": "拍摄 500 张",
+      "description": "出色的收藏，见证了你的执着。",
+      "icon": 58902,
+      "metric": "shots",
+      "target": 500,
+      "rarity": "legendary"
+    },
+    {
+      "id": "weekly_shooter",
+      "group": "consistency",
+      "name": "每周摄影师",
+      "condition": "连续 7 天拍摄",
+      "description": "你让摄影成为一种固定习惯。",
+      "icon": 57610,
+      "metric": "streak",
+      "target": 7,
+      "rarity": "common"
+    },
+    {
+      "id": "monthly_dedicated",
+      "group": "consistency",
+      "name": "月度坚持者",
+      "condition": "连续 30 天拍摄",
+      "description": "你的坚持令人钦佩。",
+      "icon": 57608,
+      "metric": "streak",
+      "target": 30,
+      "rarity": "common"
+    },
+    {
+      "id": "seasonal_photographer",
+      "group": "consistency",
+      "name": "四季摄影师",
+      "condition": "四季都有拍摄",
+      "description": "你捕捉每个季节的美。",
+      "icon": 58074,
+      "metric": "seasons",
+      "target": 4,
+      "rarity": "epic"
+    },
+    {
+      "id": "anniversary_celebrator",
+      "group": "consistency",
+      "name": "周年纪念",
+      "condition": "使用 Pellica 满 1 年",
+      "description": "你已经记录了整整一年的回忆！",
+      "icon": 59264,
+      "metric": "accountAge",
+      "target": 365,
+      "rarity": "legendary"
+    },
+    {
+      "id": "photography_veteran",
+      "group": "consistency",
+      "name": "摄影老兵",
+      "condition": "使用 Pellica 满 2 年",
+      "description": "你对摄影的长期坚持令人印象深刻。",
+      "icon": 58514,
+      "metric": "accountAge",
+      "target": 730,
+      "rarity": "legendary"
+    },
+    {
+      "id": "camera_collector",
+      "group": "technical",
+      "name": "相机收藏家",
+      "condition": "器材中有 3 台相机",
+      "description": "你用各种器材探索摄影。",
+      "icon": 59682,
+      "metric": "cameras",
+      "target": 3,
+      "rarity": "rare"
+    },
+    {
+      "id": "film_experimenter",
+      "group": "technical",
+      "name": "胶片实验家",
+      "condition": "使用 5 种不同胶片",
+      "description": "你喜欢尝试不同的胶片效果。",
+      "icon": 59294,
+      "metric": "stocks",
+      "target": 5,
+      "rarity": "rare"
+    },
+    {
+      "id": "night_owl",
+      "group": "technical",
+      "name": "夜猫子",
+      "condition": "在 22 点至 5 点之间拍摄 10 张",
+      "description": "你已征服弱光摄影的种种挑战。",
+      "icon": 58160,
+      "metric": "nightShots",
+      "target": 10,
+      "rarity": "rare"
+    },
+    {
+      "id": "golden_hour_expert",
+      "group": "technical",
+      "name": "黄金时刻专家",
+      "condition": "在黄金时刻拍摄 10 张",
+      "description": "你懂得何时捕捉那完美的暖光。",
+      "icon": 58806,
+      "metric": "goldenHourShots",
+      "target": 10,
+      "rarity": "rare"
+    },
+    {
+      "id": "black_and_white_artisan",
+      "group": "technical",
+      "name": "黑白艺术家",
+      "condition": "用黑白胶片拍摄 20 张",
+      "description": "你懂得欣赏黑白影像永恒的优雅。",
+      "icon": 57740,
+      "metric": "bwShots",
+      "target": 20,
+      "rarity": "epic"
+    }
+  ],
+  "labels": {
+    "achievementSecretName": "隐藏成就",
+    "achievementSecretHint": "等待发现",
+    "achievementSecretDescription": "继续拍摄：获得后它才会揭晓。",
+    "achievementRarityLegendary": "传奇",
+    "achievementRarityEpic": "史诗",
+    "achievementRarityRare": "稀有",
+    "achievementsTitle": "成就"
+  }
+}

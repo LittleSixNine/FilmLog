@@ -1,0 +1,24 @@
+<resources>
+ <color name="ui_background">#17231F</color>
+ <color name="ui_card">#23352D</color>
+ <color name="ui_chip">#30473B</color>
+ <color name="ui_ink">#F2EEE3</color>
+ <color name="ui_muted">#B6C2B7</color>
+ <color name="ui_accent">#D6B575</color>
+ <color name="ui_outline">#456052</color>
+ <color name="ui_selected">#344936</color>
+ <color name="ui_deep">#111B17</color>
+ <color name="ui_on_accent">#17231F</color>
+ <color name="ui_error_bg">#3D2428</color>
+ <color name="ui_error">#EBA7AF</color>
+ <color name="ui_error_outline">#AB6670</color>
+ <color name="ui_green">#82BF9B</color>
+ <color name="ui_location_updating">#DFC17E</color>
+ <color name="ui_film_count">#F2E9D8</color>
+ <color name="ui_blue">#9BBCE3</color>
+ <color name="ui_cyan">#8AC7CD</color>
+ <color name="ui_tool_bg">#2A3C32</color>
+ <color name="ui_accent_faint">#2BD6B575</color>
+ <color name="ui_ink_faint">#19F2EEE3</color>
+    <color name="ui_film_band">#252A26</color>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <color name="widget_frost_ink">#f0f6eb</color>
+    <color name="widget_frost_muted">#c5d4c8</color>
+    <color name="widget_frost_surface_top">#f231483d</color>
+    <color name="widget_frost_surface_bottom">#ed142b21</color>
+    <color name="widget_frost_edge">#40ffffff</color>
+    <color name="widget_frost_shadow">#33121f18</color>
+    <color name="widget_frost_shadow_soft">#14121f18</color>
+    <color name="widget_frost_primary_top">#dce7c6</color>
+    <color name="widget_frost_primary_bottom">#ceddb7</color>
+    <color name="widget_frost_on_primary">#213b2b</color>
+    <color name="widget_frost_secondary_top">#24ffffff</color>
+    <color name="widget_frost_secondary_bottom">#10ffffff</color>
+</resources>

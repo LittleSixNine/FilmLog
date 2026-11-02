@@ -1,0 +1,26 @@
+<resources>
+ <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+  <item name="android:fontFamily">sans</item><item name="android:textColorPrimary">@color/ui_ink</item><item name="android:textColorSecondary">@color/ui_muted</item><item name="android:colorBackground">@color/ui_background</item><item name="android:colorAccent">@color/ui_accent</item>
+  <item name="android:windowLightStatusBar">false</item><item name="android:statusBarColor">@color/ui_background</item>
+  <item name="android:navigationBarColor">@color/ui_background</item><item name="android:windowLightNavigationBar">false</item>
+  <item name="android:windowBackground">@color/ui_background</item><item name="android:windowActionModeOverlay">true</item>
+  <item name="android:alertDialogTheme">@style/FilmDialog</item>
+ </style>
+ <style name="FilmDialog" parent="android:style/Theme.Material.Dialog.Alert">
+  <item name="android:buttonBarButtonStyle">@style/SpacedDialogButton</item>
+  <item name="android:buttonBarPositiveButtonStyle">@style/SpacedDialogButton</item>
+  <item name="android:buttonBarNegativeButtonStyle">@style/SpacedDialogButton</item>
+  <item name="android:buttonBarNeutralButtonStyle">@style/SpacedDialogButton</item>
+  <item name="android:colorAccent">@color/ui_accent</item>
+  <item name="android:colorBackground">@color/ui_card</item>
+  <item name="android:textColorPrimary">@color/ui_ink</item>
+  <item name="android:textColorSecondary">@color/ui_muted</item>
+  <item name="android:windowBackground">@drawable/dialog_surface</item>
+ </style>
+ <style name="SpacedDialogButton" parent="android:style/Widget.Material.Button.Borderless">
+  <item name="android:layout_marginLeft">4dp</item><item name="android:layout_marginRight">4dp</item>
+  <item name="android:layout_marginTop">6dp</item><item name="android:layout_marginBottom">6dp</item>
+ </style>
+ <style name="LaunchTheme" parent="AppTheme"><item name="android:windowBackground">@drawable/pellica_launch</item></style>
+ <style name="FilmFullScreenMotion"><item name="android:windowEnterAnimation">@anim/film_page_enter</item><item name="android:windowExitAnimation">@anim/film_page_exit</item></style>
+</resources>
